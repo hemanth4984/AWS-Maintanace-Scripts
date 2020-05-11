@@ -5,7 +5,7 @@ import cmd
 import sys
 
 
-client = boto3.client('ec2', region_name='ap-south-1',aws_access_key_id="AKIAIPEGG7AOHJPHSJIQ",aws_secret_access_key="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")
+client = boto3.client('ec2', region_name='ap-south-1',aws_access_key_id="*****",aws_secret_access_key="****")
 ########## Filter Instances With Specified Tags ############
 response = client.describe_instances(
     Filters=[
