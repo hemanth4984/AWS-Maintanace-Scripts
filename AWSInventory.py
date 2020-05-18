@@ -14,16 +14,16 @@ import os
 from email import encoders
 
 
-ACCOUNT_ID='377738922592'
-#SES_SMTP_USER="AKIAVP4X6RJQMC6W3DVJ"
-#SES_SMTP_PASSWORD="BML2MHXi/xZVtWrPtc1uGWkAc5dunNHM1cYVQ8uMjxzk"
-MAIL_USER='awsmaintanance@gmail.com'
-MAIL_PASSWORD='sgpl@admin'
-MAIL_SUBJECT="Softility AWS Inventory for " + "softilitydevtest(377738922592) Account"
-MAIL_BODY='Team,\nPFA., For Softility AWS Inventory of softilitydevtest(377738922592) Account.'
+ACCOUNT_ID='**********'
+#SES_SMTP_USER="*********"
+#SES_SMTP_PASSWORD="***************88"
+MAIL_USER='sender@gmail.com'
+MAIL_PASSWORD='password'
+MAIL_SUBJECT="Softility AWS Inventory for " + "softilitydevtest Account"
+MAIL_BODY='Team,\nPFA., For Softility AWS Inventory of softilitydevtest Account.'
 S3_INVENTORY_BUCKET="sftytraining"
 #MAIL_FROM="testgeosol@gmail.com"
-MAIL_TO=["hvadupu@softility.com",'sbathula@softility.com','hpommurapalli@softility.com','mgorukanti@softility.com']
+MAIL_TO=["a@gmail.com",'b@gmail.com','c@gmail.com','d@gmail.com']
 
 
 #EC2 connection beginning
@@ -368,10 +368,6 @@ if len(securityGroups) > 0:
             groupType = 'egress'
             printSecGroup (groupType, ipPermissionEgress)
 
-
-
-#ses_user = "AKIAVP4X6RJQMC6W3DVJ"
-#ses_pwd = "BML2MHXi/xZVtWrPtc1uGWkAc5dunNHM1cYVQ8uMjxzk"
 
 def mail(fromadd,to, subject, text, attach):
     msg = MIMEMultipart()
